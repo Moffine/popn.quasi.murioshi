@@ -8,10 +8,10 @@ generate_quasi_murioshi <- function(){
   aaa <- 67
   bbb <- 67
   
+  popkun_color <- c("antiquewhite2","yellow","green","blue","red","blue","green","yellow","antiquewhite2")
+  popkun_yoko <- c(-2*aaa-2*bbb,-2*aaa-bbb,-aaa-bbb,-aaa,0,aaa,aaa+bbb,2*aaa+bbb,2*aaa+2*bbb)
+  
   generate_popkun <- function(popnum,high){
-    popkun_color <- c("antiquewhite2","yellow","green","blue","red","blue","green","yellow","antiquewhite2")
-    popkun_yoko <- c(-2*aaa-2*bbb,-2*aaa-bbb,-aaa-bbb,-aaa,0,aaa,aaa+bbb,2*aaa+bbb,2*aaa+2*bbb)
-    
     color <- popkun_color[popnum]
     
     if(popnum %% 2 == 0){
